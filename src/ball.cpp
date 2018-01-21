@@ -4,8 +4,6 @@
 Ball::Ball(float x, float y, color_t color) {
     this->position = glm::vec3(x, y, 0);
     this->rotation = 0;
-    speed.x = 0.01;
-    speed.y = 0;
     static const GLfloat vertex_buffer_data[] = {
         -0.2, -0.2, 0, // vertex 1
         0.2,  -0.2, 0, // vertex 2
@@ -35,8 +33,12 @@ void Ball::set_position(float x, float y) {
 }
 
 void Ball::tick() {
-    this->position.x -= speed.x;
-    // this->position.y -= speed.y;
+    this->position.x += speed.x;
+    this->position.y += speed.y;
+
+    if (!this->is_within_horizontal_boundary()){
+        this->speed.x = -this->speed.x;
+    }
 }
 
 bounding_box_t Ball::bounding_box() {
@@ -44,3 +46,11 @@ bounding_box_t Ball::bounding_box() {
     bounding_box_t bbox = { x, y, 0.4, 0.4 };
     return bbox;
 }
+
+bool Ball::is_within_horizontal_boundary(){
+    if (this->position.x <=4 and this-> position.x >=-4)
+        return true;
+    else 
+        return false;
+}
+

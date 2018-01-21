@@ -25,6 +25,10 @@ void keyboard(GLFWwindow *window, int key, int scancode, int action, int mods) {
     // Function is called first on GLFW_PRESS.
 
     if (action == GLFW_RELEASE) {
+        switch (key){
+            case GLFW_KEY_UP:
+                jump();
+        }
         // switch (key) {
         // case GLFW_KEY_C:
         // rectangle_rot_status = !rectangle_rot_status;

@@ -6,18 +6,18 @@
 
 class Thrower : public Ball{
     public:
+        Thrower(){};
         Thrower(float x, float y, color_t color) 
-        : Ball(float x, float y, color_t color){};
+        : Ball(x, y, color){};
         glm::vec3 acceleration;
         void set_acceleration(float x, float y);
-        void push_left();
-        void push_right();
-        void throw_up();
+        void set_speed(float x, float y);
         void tick();
+        bool below_ground();
         bool on_ground();
 
 
-}
-
-
+};
 #endif  // THROWER_H
+
+

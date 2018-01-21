@@ -1,6 +1,8 @@
 #include "main.h"
 #include "timer.h"
 #include "ball.h"
+#include "thrower.h"
+#include "flyer.h"
 
 using namespace std;
 
@@ -12,7 +14,10 @@ GLFWwindow *window;
 * Customizable functions *
 **************************/
 
-Ball ball1, ball2;
+Thrower thrower;
+Flyer flyer;
+
+
 
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 
@@ -50,24 +55,27 @@ void draw() {
     glm::mat4 MVP;  // MVP = Projection * View * Model
 
     // Scene render
-    ball1.draw(VP);
-    ball2.draw(VP);
+    thrower.draw(VP);
+    flyer.draw(VP);
 }
 
 void tick_input(GLFWwindow *window) {
     int left  = glfwGetKey(window, GLFW_KEY_LEFT);
     int right = glfwGetKey(window, GLFW_KEY_RIGHT);
     if (left) {
-        // Do something
+        thrower.set_speed(-0.02, thrower.speed.y);
+    }
+    else if (right) {
+        thrower.set_speed(0.02, thrower.speed.y);
     }
 }
 
 void tick_elements() {
-    ball1.tick();
-    ball2.tick();
-    if (detect_collision(ball1.bounding_box(), ball2.bounding_box())) {
-        ball1.speed = -ball1.speed;
-        ball2.speed = -ball2.speed;
+    thrower.tick();
+    flyer.tick();
+    if (detect_collision(flyer.bounding_box(), thrower.bounding_box())) {
+        thrower.speed.y = -thrower.speed.y;
+        delete flyer;
     }
 }
 
@@ -77,9 +85,11 @@ void initGL(GLFWwindow *window, int width, int height) {
     /* Objects should be created before any other gl function and shaders */
     // Create the models
 
-    ball1       = Ball(2, 0, COLOR_RED);
-    ball2       = Ball(-2, 0, COLOR_RED);
-    ball2.speed = -ball2.speed;
+    // ball1       = Ball(2, 0, COLOR_RED);
+    // ball2       = Ball(-2, 0, COLOR_RED);
+    thrower     = Thrower(1, -1, COLOR_GREEN);
+    flyer       = Flyer(2,1, COLOR_BLACK, 0.01);
+    // ball2.speed = -ball2.speed;
 
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");
@@ -145,4 +155,11 @@ void reset_screen() {
     float left   = screen_center_x - 4 / screen_zoom;
     float right  = screen_center_x + 4 / screen_zoom;
     Matrices.projection = glm::ortho(left, right, bottom, top, 0.1f, 500.0f);
+}
+
+void jump(){
+    if (thrower.on_ground()){
+        thrower.set_speed(thrower.speed.x, 0.06);
+        thrower.set_acceleration(thrower.acceleration.x, -0.0005);
+    }
 }
