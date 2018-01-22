@@ -3,6 +3,10 @@
 using namespace std;
 
 int main(){
-    cout<< obj.var1 <<endl;
-    return 0;
+    Lala* obj2 = new Lala();
+    cout<< obj2->var1 <<endl;
+
+    delete obj2;
+    cout<< obj2->var1 <<endl;
+
 }

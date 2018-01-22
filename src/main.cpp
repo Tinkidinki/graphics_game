@@ -17,8 +17,6 @@ GLFWwindow *window;
 Thrower thrower;
 Flyer flyer;
 
-
-
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 
 Timer t60(1.0 / 60);
@@ -75,7 +73,7 @@ void tick_elements() {
     flyer.tick();
     if (detect_collision(flyer.bounding_box(), thrower.bounding_box())) {
         thrower.speed.y = -thrower.speed.y;
-        delete flyer;
+        //delete flyer;
     }
 }
 
@@ -88,7 +86,8 @@ void initGL(GLFWwindow *window, int width, int height) {
     // ball1       = Ball(2, 0, COLOR_RED);
     // ball2       = Ball(-2, 0, COLOR_RED);
     thrower     = Thrower(1, -1, COLOR_GREEN);
-    flyer       = Flyer(2,1, COLOR_BLACK, 0.01);
+    flyer       = Flyer(2,1,COLOR_BLACK, 0.02);
+    
     // ball2.speed = -ball2.speed;
 
     // Create and compile our GLSL program from the shaders
