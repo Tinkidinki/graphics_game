@@ -1,8 +1,12 @@
+#include <vector>
+#include <random>
 #include "main.h"
 #include "timer.h"
 #include "ball.h"
 #include "thrower.h"
 #include "flyer.h"
+
+
 
 using namespace std;
 
@@ -14,8 +18,10 @@ GLFWwindow *window;
 * Customizable functions *
 **************************/
 
+int num_flyers = 10;
 Thrower thrower;
-Flyer flyer;
+//Flyer flyer;
+vector<Flyer> flyers(num_flyers);
 
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 
@@ -54,7 +60,9 @@ void draw() {
 
     // Scene render
     thrower.draw(VP);
-    flyer.draw(VP);
+    for (int i=0;i<num_flyers;i++){
+        flyers[i].draw(VP);
+    }
 }
 
 void tick_input(GLFWwindow *window) {
@@ -70,10 +78,17 @@ void tick_input(GLFWwindow *window) {
 
 void tick_elements() {
     thrower.tick();
-    flyer.tick();
-    if (detect_collision(flyer.bounding_box(), thrower.bounding_box())) {
-        thrower.speed.y = -thrower.speed.y;
-        //delete flyer;
+
+    for(int i=0;i<num_flyers;i++){
+        flyers[i].tick();
+    
+
+        if (detect_collision(flyers[i].bounding_box(), thrower.bounding_box())) {
+            thrower.speed.y = -2 * thrower.speed.y;
+            flyers[i].set_position(-5,-5);
+            
+            //delete flyer;
+        }
     }
 }
 
@@ -86,7 +101,15 @@ void initGL(GLFWwindow *window, int width, int height) {
     // ball1       = Ball(2, 0, COLOR_RED);
     // ball2       = Ball(-2, 0, COLOR_RED);
     thrower     = Thrower(1, -1, COLOR_GREEN);
-    flyer       = Flyer(2,1,COLOR_BLACK, 0.02);
+
+    random_device rd; // obtain a random number from hardware
+    mt19937 eng(rd()); // seed the generator
+    uniform_int_distribution<> distr_x(-3.5, 3.5); // define the range
+    uniform_int_distribution<> distr_y(0, 3.5); 
+
+    for (int i=0; i<num_flyers; i++){
+        flyers[i] = Flyer(distr_x(eng),distr_y(eng),COLOR_BLACK, 0.02);
+    }
     
     // ball2.speed = -ball2.speed;
 
