@@ -39,6 +39,10 @@ void Ball::tick() {
     if (!this->is_within_horizontal_boundary()){
         this->speed.x = -this->speed.x;
     }
+
+    if (this->is_above_sky()){
+        this->speed.y = -this->speed.y;
+    }
 }
 
 bounding_box_t Ball::bounding_box() {
@@ -49,6 +53,20 @@ bounding_box_t Ball::bounding_box() {
 
 bool Ball::is_within_horizontal_boundary(){
     if (this->position.x <=4 and this-> position.x >=-4)
+        return true;
+    else 
+        return false;
+}
+
+bool Ball::is_above_sky(){
+    if (this->position.y > 4)
+        return true;
+    else 
+        return false;
+}
+
+bool Ball::is_underground(){
+    if (this -> position.y < -4)
         return true;
     else 
         return false;

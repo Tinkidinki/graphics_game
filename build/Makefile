@@ -177,6 +177,33 @@ src/color.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
+src/flyer.o: src/flyer.cpp.o
+
+.PHONY : src/flyer.o
+
+# target to build an object file
+src/flyer.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o
+.PHONY : src/flyer.cpp.o
+
+src/flyer.i: src/flyer.cpp.i
+
+.PHONY : src/flyer.i
+
+# target to preprocess a source file
+src/flyer.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.i
+.PHONY : src/flyer.cpp.i
+
+src/flyer.s: src/flyer.cpp.s
+
+.PHONY : src/flyer.s
+
+# target to generate assembly for a file
+src/flyer.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.s
+.PHONY : src/flyer.cpp.s
+
 src/input.o: src/input.cpp.o
 
 .PHONY : src/input.o
@@ -339,6 +366,33 @@ src/timer.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/timer.cpp.s
 .PHONY : src/timer.cpp.s
 
+src/trampoline.o: src/trampoline.cpp.o
+
+.PHONY : src/trampoline.o
+
+# target to build an object file
+src/trampoline.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o
+.PHONY : src/trampoline.cpp.o
+
+src/trampoline.i: src/trampoline.cpp.i
+
+.PHONY : src/trampoline.i
+
+# target to preprocess a source file
+src/trampoline.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.i
+.PHONY : src/trampoline.cpp.i
+
+src/trampoline.s: src/trampoline.cpp.s
+
+.PHONY : src/trampoline.s
+
+# target to generate assembly for a file
+src/trampoline.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.s
+.PHONY : src/trampoline.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -354,6 +408,9 @@ help:
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
+	@echo "... src/flyer.o"
+	@echo "... src/flyer.i"
+	@echo "... src/flyer.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
@@ -372,6 +429,9 @@ help:
 	@echo "... src/timer.o"
 	@echo "... src/timer.i"
 	@echo "... src/timer.s"
+	@echo "... src/trampoline.o"
+	@echo "... src/trampoline.i"
+	@echo "... src/trampoline.s"
 .PHONY : help
 
 

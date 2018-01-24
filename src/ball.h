@@ -15,6 +15,8 @@ public:
     void set_position(float x, float y);
     void tick();
     bool is_within_horizontal_boundary();
+    bool is_underground();
+    bool is_above_sky();
     
     bounding_box_t bounding_box();
 private:

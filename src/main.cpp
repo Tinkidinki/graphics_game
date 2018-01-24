@@ -5,8 +5,7 @@
 #include "ball.h"
 #include "thrower.h"
 #include "flyer.h"
-
-
+#include "trampoline.h"
 
 using namespace std;
 
@@ -22,6 +21,7 @@ int num_flyers = 10;
 Thrower thrower;
 //Flyer flyer;
 vector<Flyer> flyers(num_flyers);
+Trampoline tramp;
 
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 
@@ -62,7 +62,8 @@ void draw() {
     thrower.draw(VP);
     for (int i=0;i<num_flyers;i++){
         flyers[i].draw(VP);
-    }
+    };
+    tramp.draw(VP);
 }
 
 void tick_input(GLFWwindow *window) {
@@ -84,8 +85,11 @@ void tick_elements() {
     
 
         if (detect_collision(flyers[i].bounding_box(), thrower.bounding_box())) {
-            thrower.speed.y = -2 * thrower.speed.y;
-            flyers[i].set_position(-5,-5);
+            if (thrower.speed.y < 0)
+                flyers[i].set_position(-5,-5);
+            
+            thrower.speed.y = -thrower.speed.y;
+            
             
             //delete flyer;
         }
@@ -101,6 +105,7 @@ void initGL(GLFWwindow *window, int width, int height) {
     // ball1       = Ball(2, 0, COLOR_RED);
     // ball2       = Ball(-2, 0, COLOR_RED);
     thrower     = Thrower(1, -1, COLOR_GREEN);
+    tramp = Trampoline(-1,-1,COLOR_RED);
 
     random_device rd; // obtain a random number from hardware
     mt19937 eng(rd()); // seed the generator
