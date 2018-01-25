@@ -1,11 +1,8 @@
 #include <vector>
 #include <random>
-#include "main.h"
 #include "timer.h"
-#include "ball.h"
-#include "thrower.h"
-#include "flyer.h"
-#include "trampoline.h"
+#include "main.h"
+
 
 using namespace std;
 
@@ -13,15 +10,9 @@ GLMatrices Matrices;
 GLuint     programID;
 GLFWwindow *window;
 
-/**************************
-* Customizable functions *
-**************************/
 
-int num_flyers = 10;
-Thrower thrower;
-//Flyer flyer;
-vector<Flyer> flyers(num_flyers);
-Trampoline tramp;
+
+
 
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 
