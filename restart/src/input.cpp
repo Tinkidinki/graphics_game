@@ -27,7 +27,8 @@ void keyboard(GLFWwindow *window, int key, int scancode, int action, int mods) {
     if (action == GLFW_RELEASE) {
         switch (key){
             case GLFW_KEY_UP:
-                jump();
+                //jump();
+                ;
         }
         // switch (key) {
         // case GLFW_KEY_C:
