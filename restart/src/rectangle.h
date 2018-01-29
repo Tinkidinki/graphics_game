@@ -1,21 +1,20 @@
 #include "main.h"
 
-#ifndef CIRCLE_H
-#define CIRCLE_H
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
 
-class Circle{
+class Rectangle{
 public:
-    Circle(){};
-    Circle(float x, float y, float radius, float fraction, color_t color);
+    Rectangle(){};
+    Rectangle(float x, float y, float height, float width, float angle, color_t color);
     void set_position(float x, float y);
     void draw(glm::mat4 VP);
     bounding_box_t bounding_box();
     
     glm::vec3 position;
     float rotation;
-    float radius;
-    float fraction;
-    
+    float height;
+    float width;
     
 
 private:
@@ -23,4 +22,4 @@ private:
 
 };
 
-#endif //CIRCLE_H
+#endif //RECTANGLE_H

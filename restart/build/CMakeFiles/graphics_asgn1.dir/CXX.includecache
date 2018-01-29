@@ -11,6 +11,8 @@ circle.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/circle.h
 main.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+iostream
+-
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/circle.h
 main.h
@@ -19,6 +21,24 @@ main.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/color.cpp
 main.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer.cpp
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+flyer.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer.h
+thrower.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
+iostream
+-
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer.h
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+circle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/circle.h
+thrower.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/input.cpp
 iostream
@@ -53,6 +73,12 @@ main.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
 circle.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/circle.h
+rectangle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.h
+flyer.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer.h
+thrower.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
 iostream
@@ -117,6 +143,28 @@ glm/gtc/matrix_transform.hpp
 -
 main.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.cpp
+rectangle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.h
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.h
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.cpp
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+thrower.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+circle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/circle.h
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/timer.cpp
 timer.h

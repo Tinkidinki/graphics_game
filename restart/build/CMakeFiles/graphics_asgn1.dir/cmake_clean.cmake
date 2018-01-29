@@ -1,10 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graphics_asgn1.dir/src/circle.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
+  "CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
+  "CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o"
+  "CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
   "graphics_asgn1.pdb"
   "graphics_asgn1"

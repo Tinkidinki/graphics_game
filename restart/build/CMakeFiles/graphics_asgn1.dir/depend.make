@@ -8,12 +8,21 @@ CMakeFiles/graphics_asgn1.dir/src/circle.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/color.cpp
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/main.h
 
+CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o: ../src/circle.h
+CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o: ../src/flyer.cpp
+CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o: ../src/flyer.h
+CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o: ../src/thrower.h
+
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/input.cpp
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/main.h
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/circle.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/flyer.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/rectangle.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/thrower.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/timer.h
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/main.h
@@ -21,6 +30,15 @@ CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/nonedit.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: ../src/other_handlers.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o: ../src/rectangle.cpp
+CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o: ../src/rectangle.h
+
+CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o: ../src/circle.h
+CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o: ../src/thrower.cpp
+CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o: ../src/thrower.h
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.h

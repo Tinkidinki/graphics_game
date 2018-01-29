@@ -1,5 +1,6 @@
 #include "circle.h"
 #include "main.h"
+#include <iostream>
 
 #define PI 3.14159265358979323846
 
@@ -30,6 +31,7 @@ void fill_array(int sides, float radius, int fraction, GLfloat array[]){
     oldpoint.z = 0.0f;
 
     int iterations = (int)(fraction*sides);
+    std::cout<< iterations <<std::endl;
 
     //For each triangle
     for(int i = 0; i < iterations; i++){
@@ -63,9 +65,10 @@ Circle::Circle(float x, float y, float radius, float fraction, color_t color) {
     int sides = 50;
     this->radius = radius;
     this->fraction = fraction;
-    static GLfloat vertex_buffer_data[1000]; 
+    GLfloat vertex_buffer_data[1000]; 
     fill_array(sides, radius, fraction, vertex_buffer_data);
     int num_vertices = (int)(fraction*sides)*3;
+    std::cout << num_vertices <<std::endl;
      
     this->object = create3DObject(GL_TRIANGLES, num_vertices, vertex_buffer_data, color, GL_FILL);
 }

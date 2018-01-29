@@ -66,16 +66,16 @@ void draw() {
     tramp.draw(VP);
 }
 
-void tick_input(GLFWwindow *window) {
-    int left  = glfwGetKey(window, GLFW_KEY_LEFT);
-    int right = glfwGetKey(window, GLFW_KEY_RIGHT);
-    if (left) {
-        thrower.set_speed(-0.02, thrower.speed.y);
-    }
-    else if (right) {
-        thrower.set_speed(0.02, thrower.speed.y);
-    }
-}
+// void tick_input(GLFWwindow *window) {
+//     int left  = glfwGetKey(window, GLFW_KEY_LEFT);
+//     int right = glfwGetKey(window, GLFW_KEY_RIGHT);
+//     if (left) {
+//         thrower.set_speed(-0.02, thrower.speed.y);
+//     }
+//     else if (right) {
+//         thrower.set_speed(0.02, thrower.speed.y);
+//     }
+// }
 
 void tick_elements() {
     thrower.tick();
@@ -164,7 +164,7 @@ int main(int argc, char **argv) {
             glfwSwapBuffers(window);
 
             tick_elements();
-            tick_input(window);
+            //tick_input(window);
         }
 
         // Poll for Keyboard and mouse events

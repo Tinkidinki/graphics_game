@@ -7,6 +7,9 @@ using namespace std;
 
 //------------------Template Imports---------------------------------------------
 #include "circle.h"
+#include "rectangle.h"
+#include "flyer.h"
+#include "thrower.h"
 
 //---------------Important declarations-------------------------------------------
 GLMatrices Matrices;
@@ -18,11 +21,15 @@ Timer t60(1.0 / 60);
 
 //--------------Object declarations-----------------------------------------------
 Circle c1;
+Rectangle r1;
+Flyer f1;
+Thrower thrower;
 
 // -------------Functions----------------------------------------------------------
 void draw() {
     
     //---------Don't touch---------------------------------------------------------
+    reset_screen();
     glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glUseProgram (programID);
     Matrices.view = glm::lookAt(glm::vec3(0, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0)); // Fixed camera for 2D (ortho) in XY plane
@@ -31,31 +38,47 @@ void draw() {
 
     //---------Scene render--------------------------------------------------------
     c1.draw(VP);
+    //r1.draw(VP);
+    f1.draw(VP);
+    thrower.draw(VP);
 }
 
 void move(char key){
     switch(key){
         case 'l':
-        // give left velocity
-        ;
+            thrower.speed.x += (-0.05);
+            cout << "X velocity" << thrower.speed.x << endl;
+            cout << "Y velocity" << thrower.speed.y << endl;
+            break;
+            
         case 'r':
-        //give right velocity
-        ;
+            thrower.speed.x += (0.05);
+            cout << "X velocity" << thrower.speed.x << endl;
+            cout << "Y velocity" << thrower.speed.y << endl;
+            break;
+
         case 'u':
-        //give up velocity
-        ;
+            //cout << "Move got called!" << endl;
+            thrower.speed.y += (0.1);
+            //cout << thrower.speed.y << endl;
+            break;
     }
 }
 
 void tick_elements() {
     // Call the tick functions of all the objects.
     // That's all.
+    f1.tick(&thrower);
+    thrower.tick();
 }
 
 
 void initGL(GLFWwindow *window, int width, int height) {
     //-----------Create objects----------------------------------------------
-        c1 = Circle(1,1,2.0f,1.0f,COLOR_BLACK);
+        c1 = Circle(1,1,1.0f,1.0f,COLOR_BLACK);
+        r1 = Rectangle(2,2,2,1,45,COLOR_GREEN);
+        f1 = Flyer(0,3,1.0f,0.01f);
+        thrower = Thrower(-1,-1,0.5f);
 
         // thrower     = Thrower(1, -1, COLOR_GREEN);
         // tramp = Trampoline(-1,-1,COLOR_RED);

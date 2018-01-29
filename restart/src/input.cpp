@@ -27,8 +27,11 @@ void keyboard(GLFWwindow *window, int key, int scancode, int action, int mods) {
     if (action == GLFW_RELEASE) {
         switch (key){
             case GLFW_KEY_UP:
-                //jump();
-                ;
+                cout << "You pressed up!" << endl;
+                move('u');
+
+                
+                
         }
         // switch (key) {
         // case GLFW_KEY_C:
@@ -47,6 +50,14 @@ void keyboard(GLFWwindow *window, int key, int scancode, int action, int mods) {
         switch (key) {
         case GLFW_KEY_ESCAPE:
             quit(window);
+            break;
+        case GLFW_KEY_LEFT:
+            cout << "You pressed left!" << endl;
+            move('l');
+            break;
+        case GLFW_KEY_RIGHT:
+            cout << "You pressed right!" << endl;
+            move('r');
             break;
         default:
             break;
