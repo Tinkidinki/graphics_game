@@ -136,7 +136,7 @@ void initGL(GLFWwindow *window, int width, int height) {
     glEnable (GL_DEPTH_TEST);
     glDepthFunc (GL_LEQUAL);
 
-    cout << "VENDOR: " << glGetString(GL_VENDOR) << endl;
+     << "VENDOR: " << glGetString(GL_VENDOR) << endl;
     cout << "RENDERER: " << glGetString(GL_RENDERER) << endl;
     cout << "VERSION: " << glGetString(GL_VERSION) << endl;
     cout << "GLSL: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << endl;

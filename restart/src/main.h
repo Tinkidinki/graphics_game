@@ -14,6 +14,8 @@
 #include <glm/gtx/transform.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+#define acc_due_to_gravity -0.0005f
+
 struct color_t {
     int r;
     int g;

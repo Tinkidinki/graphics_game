@@ -15,18 +15,18 @@ void Flyer::tick(Thrower* thrower){
     }
 
     if (detect_collision(this->bounding_box(), thrower->bounding_box())){
-        std::cout << "collision!" << std::endl;
+        //std::cout << "collision!" << std::endl;
         if (thrower->speed.y <0){
             this->position.y = -5;
             this->position.x = -5;
             this->speed = 0;
         }
         else{
-            std::cout << thrower->speed.x <<" "<<thrower->speed.y <<std::endl;
+            //std::cout << thrower->speed.x <<" "<<thrower->speed.y <<std::endl;
             thrower->speed.x = - thrower->speed.x;
             thrower->speed.y = - thrower->speed.y;
-            std::cout << thrower->speed.x <<" "<<thrower->speed.y <<std::endl;
-            std::cout << "----------------------------------" <<std::endl;
+            //std::cout << thrower->speed.x <<" "<<thrower->speed.y <<std::endl;
+            //std::cout << "----------------------------------" <<std::endl;
         }
     }
 }

@@ -1,14 +1,19 @@
 #include "rectangle.h"
 #include "main.h"
+#include <iostream>
+using namespace std;
 
 
 Rectangle::Rectangle(float x, float y, float height, float width, float angle, color_t color) {
     this->position = glm::vec3(x, y, 0);
     this->rotation = angle;
-    float vertex_h = height/2;
-    float vertex_w = width/2;
+    this->height = height;
+    this->width = width;
+    float vertex_h = this->height/2;
+    float vertex_w = this->width/2;
+   
     
-    static const GLfloat vertex_buffer_data[] = {
+    GLfloat vertex_buffer_data[] = {
         -vertex_w, -vertex_h, 0, // vertex 1
         vertex_w,  -vertex_h, 0, // vertex 2
         vertex_w,  vertex_h, 0, // vertex 3
@@ -17,6 +22,7 @@ Rectangle::Rectangle(float x, float y, float height, float width, float angle, c
         -vertex_w, vertex_h, 0, // vertex 4
         -vertex_w, -vertex_h, 0 // vertex 1
     };
+
 
     this->object = create3DObject(GL_TRIANGLES, 6, vertex_buffer_data, color, GL_FILL);
 }

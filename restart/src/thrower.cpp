@@ -1,7 +1,6 @@
 #include "main.h"
 #include "thrower.h"
 
-#define acc_due_to_gravity -0.0005f
 
 Thrower::Thrower(float x, float y, float radius):Circle(x, y, radius, 1.0f, COLOR_RED){
     this->acceleration.x = 0; 

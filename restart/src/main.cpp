@@ -10,6 +10,7 @@ using namespace std;
 #include "rectangle.h"
 #include "flyer.h"
 #include "thrower.h"
+#include "ground.h"
 
 //---------------Important declarations-------------------------------------------
 GLMatrices Matrices;
@@ -21,9 +22,10 @@ Timer t60(1.0 / 60);
 
 //--------------Object declarations-----------------------------------------------
 Circle c1;
-Rectangle r1;
+//Rectangle r1;
 Flyer f1;
 Thrower thrower;
+Ground ground;
 
 // -------------Functions----------------------------------------------------------
 void draw() {
@@ -41,6 +43,7 @@ void draw() {
     //r1.draw(VP);
     f1.draw(VP);
     thrower.draw(VP);
+    ground.draw(VP);
 }
 
 void move(char key){
@@ -59,26 +62,32 @@ void move(char key){
 
         case 'u':
             //cout << "Move got called!" << endl;
-            thrower.speed.y += (0.1);
+            thrower.speed.y += (0.05);
             //cout << thrower.speed.y << endl;
             break;
     }
 }
 
 void tick_elements() {
-    // Call the tick functions of all the objects.
-    // That's all.
-    f1.tick(&thrower);
+    thrower.acceleration.x = 0;
+    thrower.acceleration.y = 0;
+    // Other tick functions here, BEFORE the thrower's tick function------------
+    //1.tick(&thrower);
+    ground.tick(&thrower);
+    //--------------------------------------------------------------------------
     thrower.tick();
+
+    
 }
 
 
 void initGL(GLFWwindow *window, int width, int height) {
     //-----------Create objects----------------------------------------------
         c1 = Circle(1,1,1.0f,1.0f,COLOR_BLACK);
-        r1 = Rectangle(2,2,2,1,45,COLOR_GREEN);
+        //r1 = Rectangle(2,2,6,6,45,COLOR_GREEN);
         f1 = Flyer(0,3,1.0f,0.01f);
         thrower = Thrower(-1,-1,0.5f);
+        ground = Ground(0,8.0f);
 
         // thrower     = Thrower(1, -1, COLOR_GREEN);
         // tramp = Trampoline(-1,-1,COLOR_RED);
@@ -139,8 +148,15 @@ int main(int argc, char **argv) {
 }
 
 bool detect_collision(bounding_box_t a, bounding_box_t b) {
-    return (abs(a.x - b.x) * 2 < (a.width + b.width)) &&
+    cout <<"ground.x: "<< a.x<<"  ball.x:" <<b.x << endl;
+    cout <<"ground.y:  "<< a.y<<" ball.y: " <<b.y <<endl;
+    cout <<a.width + b.width << "a.width + b.width" << endl;
+    cout <<a.height + b.height << "a.height + b.height" <<endl;
+    
+    bool ans = (abs(a.x - b.x) * 2 < (a.width + b.width)) &&
            (abs(a.y - b.y) * 2 < (a.height + b.height));
+    cout <<ans <<"Collision?" <<endl;
+    return ans;
 }
 
 void reset_screen() {
