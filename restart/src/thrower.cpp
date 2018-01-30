@@ -16,9 +16,14 @@ void Thrower::tick(){
     this->speed.x += this->acceleration.x;
     this->speed.y += this->acceleration.y + acc_due_to_gravity;
 
-     if (!this->is_within_horizontal_boundary()){
+    if (!this->is_within_horizontal_boundary()){
         this->speed.x = -this->speed.x;
     }
+
+    if (this->is_above_sky()){
+        this->speed.y = - this->speed.y;
+    }
+     
 }
 
 bool Thrower::is_within_horizontal_boundary(){
@@ -26,4 +31,9 @@ bool Thrower::is_within_horizontal_boundary(){
         return true;
     else 
         return false;
+}
+
+bool Thrower::is_above_sky(){
+    return (this->position.y>=4);
+        
 }

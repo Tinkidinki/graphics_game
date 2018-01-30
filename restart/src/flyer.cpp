@@ -21,13 +21,10 @@ void Flyer::tick(Thrower* thrower){
             this->position.x = -5;
             this->speed = 0;
         }
-        else{
-            //std::cout << thrower->speed.x <<" "<<thrower->speed.y <<std::endl;
-            thrower->speed.x = - thrower->speed.x;
-            thrower->speed.y = - thrower->speed.y;
-            //std::cout << thrower->speed.x <<" "<<thrower->speed.y <<std::endl;
-            //std::cout << "----------------------------------" <<std::endl;
-        }
+        
+        thrower->speed.x = - thrower->speed.x;
+        thrower->speed.y = - thrower->speed.y;
+            
     }
 }
 

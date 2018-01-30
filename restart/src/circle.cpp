@@ -2,8 +2,6 @@
 #include "main.h"
 #include <iostream>
 
-#define PI 3.14159265358979323846
-
 typedef struct {
         GLfloat x;
         GLfloat y;
@@ -66,12 +64,17 @@ Circle::Circle(float x, float y, float radius, float fraction, color_t color) {
     this->radius = radius;
     this->fraction = fraction;
     GLfloat vertex_buffer_data[1000]; 
+    
+    //-----Initialising to 0--------------------------------------------------------
+    for (int i=0;i<1000;i++){
+        vertex_buffer_data[i] = 0.0f;
+    }
+    
     fill_array(sides, radius, fraction, vertex_buffer_data);
     int num_vertices = (int)(fraction*sides)*3;
-    //std::cout << num_vertices <<std::endl;
-     
     this->object = create3DObject(GL_TRIANGLES, num_vertices, vertex_buffer_data, color, GL_FILL);
 }
+
 
 void Circle::draw(glm::mat4 VP) {
     Matrices.model = glm::mat4(1.0f);

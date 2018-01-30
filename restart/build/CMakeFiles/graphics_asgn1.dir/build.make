@@ -129,9 +129,33 @@ CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o.provides: CMakeFiles/graphics_asgn
 CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o
 
 
+CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
+CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o: ../src/flyer_with_plank.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.cpp > CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.i
+
+CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.cpp -o CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.s
+
+CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.requires:
+
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.requires
+
+CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.provides: CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.requires
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.provides.build
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.provides
+
+CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o
+
+
 CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o: ../src/ground.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/ground.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/ground.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o.provides.build: CMakeFiles/graphi
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/input.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/input.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/graphics_asgn1.dir/src/input.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/main.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o.provides.build: CMakeFiles/graphics
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/nonedit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/nonedit.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o.provides.build: CMakeFiles/graph
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: ../src/other_handlers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/other_handlers.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o: ../src/rectangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o.provides.build: CMakeFiles/gra
 
 CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o: ../src/thrower.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.i: cmake_force
@@ -299,7 +323,7 @@ CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o.provides.build: CMakeFiles/graph
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o -c /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/timer.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.i: cmake_force
@@ -326,6 +350,7 @@ graphics_asgn1_OBJECTS = \
 "CMakeFiles/graphics_asgn1.dir/src/circle.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/color.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o" \
+"CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/input.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/main.cpp.o" \
@@ -341,6 +366,7 @@ graphics_asgn1_EXTERNAL_OBJECTS =
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/circle.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/color.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o
+graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/input.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
@@ -351,7 +377,7 @@ graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/build.make
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable graphics_asgn1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable graphics_asgn1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics_asgn1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -362,6 +388,7 @@ CMakeFiles/graphics_asgn1.dir/build: graphics_asgn1
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/circle.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/color.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.o.requires
+CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/input.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/main.cpp.o.requires

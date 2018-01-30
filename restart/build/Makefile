@@ -204,6 +204,33 @@ src/flyer.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer.cpp.s
 .PHONY : src/flyer.cpp.s
 
+src/flyer_with_plank.o: src/flyer_with_plank.cpp.o
+
+.PHONY : src/flyer_with_plank.o
+
+# target to build an object file
+src/flyer_with_plank.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o
+.PHONY : src/flyer_with_plank.cpp.o
+
+src/flyer_with_plank.i: src/flyer_with_plank.cpp.i
+
+.PHONY : src/flyer_with_plank.i
+
+# target to preprocess a source file
+src/flyer_with_plank.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.i
+.PHONY : src/flyer_with_plank.cpp.i
+
+src/flyer_with_plank.s: src/flyer_with_plank.cpp.s
+
+.PHONY : src/flyer_with_plank.s
+
+# target to generate assembly for a file
+src/flyer_with_plank.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.s
+.PHONY : src/flyer_with_plank.cpp.s
+
 src/ground.o: src/ground.cpp.o
 
 .PHONY : src/ground.o
@@ -438,6 +465,9 @@ help:
 	@echo "... src/flyer.o"
 	@echo "... src/flyer.i"
 	@echo "... src/flyer.s"
+	@echo "... src/flyer_with_plank.o"
+	@echo "... src/flyer_with_plank.i"
+	@echo "... src/flyer_with_plank.s"
 	@echo "... src/ground.o"
 	@echo "... src/ground.i"
 	@echo "... src/ground.s"

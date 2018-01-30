@@ -10,6 +10,7 @@ public:
     Thrower(float x, float y, float radius);
     void tick();
     bool is_within_horizontal_boundary();
+    bool is_above_sky();
 
     glm::vec3 speed;
     glm::vec3 acceleration;

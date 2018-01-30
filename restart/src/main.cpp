@@ -11,6 +11,7 @@ using namespace std;
 #include "flyer.h"
 #include "thrower.h"
 #include "ground.h"
+#include "flyer_with_plank.h"
 
 //---------------Important declarations-------------------------------------------
 GLMatrices Matrices;
@@ -22,10 +23,10 @@ Timer t60(1.0 / 60);
 
 //--------------Object declarations-----------------------------------------------
 Circle c1;
-//Rectangle r1;
 Flyer f1;
 Thrower thrower;
 Ground ground;
+FlyerWithPlank fp;
 
 // -------------Functions----------------------------------------------------------
 void draw() {
@@ -40,10 +41,10 @@ void draw() {
 
     //---------Scene render--------------------------------------------------------
     c1.draw(VP);
-    //r1.draw(VP);
     f1.draw(VP);
     thrower.draw(VP);
     ground.draw(VP);
+    fp.draw(VP);
 }
 
 void move(char key){
@@ -61,9 +62,7 @@ void move(char key){
             break;
 
         case 'u':
-            //cout << "Move got called!" << endl;
-            thrower.speed.y += (0.05);
-            //cout << thrower.speed.y << endl;
+            thrower.speed.y += (0.1);
             break;
     }
 }
@@ -71,10 +70,11 @@ void move(char key){
 void tick_elements() {
     thrower.acceleration.x = 0;
     thrower.acceleration.y = 0;
-    // Other tick functions here, BEFORE the thrower's tick function------------
-    //1.tick(&thrower);
+    //-------Other tick functions here, BEFORE the thrower's tick function------------
+    f1.tick(&thrower);
     ground.tick(&thrower);
-    //--------------------------------------------------------------------------
+    fp.tick(&thrower);
+    //--------------------------------------------------------------------------------
     thrower.tick();
 
     
@@ -84,12 +84,12 @@ void tick_elements() {
 void initGL(GLFWwindow *window, int width, int height) {
     //-----------Create objects----------------------------------------------
         c1 = Circle(1,1,1.0f,1.0f,COLOR_BLACK);
-        //r1 = Rectangle(2,2,6,6,45,COLOR_GREEN);
         f1 = Flyer(0,3,1.0f,0.01f);
         thrower = Thrower(-1,-1,0.5f);
         ground = Ground(0,8.0f);
+        fp = FlyerWithPlank(-2.0f, 3.0f, 0.5f, 0.01f);
 
-        // thrower     = Thrower(1, -1, COLOR_GREEN);
+        // thrower  = Thrower(1, -1, COLOR_GREEN);
         // tramp = Trampoline(-1,-1,COLOR_RED);
 
         // random_device rd; // obtain a random number from hardware
@@ -100,7 +100,6 @@ void initGL(GLFWwindow *window, int width, int height) {
         // for (int i=0; i<num_flyers; i++){
         //     flyers[i] = Flyer(distr_x(eng),distr_y(eng),COLOR_BLACK, 0.02);
         // }
-    
    
 
     //-----------Don't touch-------------------------------------------------
@@ -120,8 +119,8 @@ void initGL(GLFWwindow *window, int width, int height) {
 
 int main(int argc, char **argv) {
     srand(time(0));
-    int width  = 600;
-    int height = 600;
+    int width  = 768;
+    int height = 768;
     window = initGLFW(width, height);
     initGL (window, width, height);
 

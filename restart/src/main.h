@@ -15,6 +15,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 #define acc_due_to_gravity -0.0005f
+#define PI 3.14159265358979323846
 
 struct color_t {
     int r;

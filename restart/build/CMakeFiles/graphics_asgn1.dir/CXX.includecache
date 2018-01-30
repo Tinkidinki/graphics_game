@@ -40,6 +40,22 @@ circle.h
 thrower.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
 
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.cpp
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+flyer_with_plank.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.h
+math.h
+-
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.h
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+rectangle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.h
+flyer.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer.h
+
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/ground.cpp
 ground.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/ground.h
@@ -97,6 +113,8 @@ thrower.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
 ground.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/ground.h
+flyer_with_plank.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.h
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
 iostream

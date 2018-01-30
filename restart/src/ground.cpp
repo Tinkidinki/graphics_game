@@ -13,9 +13,7 @@ Ground::Ground(float x, float width):
 void Ground::tick(Thrower* thrower){
     float normal_reaction;
     if (detect_collision(this->bounding_box(), thrower->bounding_box())){
-        normal_reaction = -acc_due_to_gravity;
-        if (thrower->speed.y != 0)
-            thrower->speed.y = 0;
+        normal_reaction = -acc_due_to_gravity - thrower->speed.y;
         //cout << "ENTERS IF" <<endl;
         //cout << normal_reaction <<"normal_reaction inside if is"<<endl;
     }
