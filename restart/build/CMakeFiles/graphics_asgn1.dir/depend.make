@@ -41,6 +41,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/rectangle.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/thrower.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/trampoline.h
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: ../src/nonedit.cpp
@@ -59,4 +60,11 @@ CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o: ../src/thrower.h
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.h
+
+CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o: ../src/circle.h
+CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o: ../src/rectangle.h
+CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o: ../src/thrower.h
+CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o: ../src/trampoline.cpp
+CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o: ../src/trampoline.h
 

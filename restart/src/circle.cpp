@@ -15,7 +15,7 @@ point rotate_by(double angle, point inp_point){
     return new_point;
 };
 
-void fill_array(int sides, float radius, int fraction, GLfloat array[]){
+void fill_array(int sides, float radius, float fraction, GLfloat array[]){
     double angle = 2 * PI / sides;
     
     point vertex;
@@ -24,8 +24,8 @@ void fill_array(int sides, float radius, int fraction, GLfloat array[]){
     vertex.z = 0.0f;
 
     point oldpoint;
-    oldpoint.x = 0.0f;
-    oldpoint.y = radius;
+    oldpoint.x = - radius;
+    oldpoint.y = 0.0f;
     oldpoint.z = 0.0f;
 
     int iterations = (int)(fraction*sides);

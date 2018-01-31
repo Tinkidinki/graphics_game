@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/thrower.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+  "CMakeFiles/graphics_asgn1.dir/src/trampoline.cpp.o"
   "graphics_asgn1.pdb"
   "graphics_asgn1"
 )

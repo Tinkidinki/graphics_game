@@ -47,6 +47,8 @@ flyer_with_plank.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.h
 math.h
 -
+iostream
+-
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.h
 main.h
@@ -115,6 +117,8 @@ ground.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/ground.h
 flyer_with_plank.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/flyer_with_plank.h
+trampoline.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/trampoline.h
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
 iostream
@@ -211,4 +215,18 @@ GLFW/glfw3.h
 -
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/timer.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/trampoline.cpp
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+trampoline.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/trampoline.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/trampoline.h
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+rectangle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.h
+thrower.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
 
