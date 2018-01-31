@@ -96,6 +96,20 @@ glm/gtc/matrix_transform.hpp
 main.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
 
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/magnet.cpp
+magnet.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/magnet.h
+
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/magnet.h
+main.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
+circle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/circle.h
+rectangle.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/rectangle.h
+thrower.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/thrower.h
+
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.cpp
 vector
 -
@@ -121,6 +135,8 @@ trampoline.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/trampoline.h
 pond.h
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/pond.h
+magnet.h
+/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/magnet.h
 
 /media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/graphics_game/restart/src/main.h
 iostream

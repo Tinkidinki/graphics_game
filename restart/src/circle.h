@@ -6,7 +6,7 @@
 class Circle{
 public:
     Circle(){};
-    Circle(float x, float y, float radius, float fraction, color_t color);
+    Circle(float x, float y, float radius, float fraction, float angle,  color_t color);
     void set_position(float x, float y);
     void draw(glm::mat4 VP);
     bounding_box_t bounding_box();

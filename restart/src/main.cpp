@@ -14,6 +14,7 @@ using namespace std;
 #include "flyer_with_plank.h"
 #include "trampoline.h"
 #include "pond.h"
+#include "magnet.h"
 
 //---------------Important declarations-------------------------------------------
 GLMatrices Matrices;
@@ -25,12 +26,15 @@ Timer t60(1.0 / 60);
 
 //--------------Object declarations-----------------------------------------------
 Circle c1;
+Circle c2;
+
 Flyer f1;
 Thrower thrower;
 Ground ground;
 FlyerWithPlank fp;
 Trampoline t;
 Pond p;
+Magnet m;
 
 // -------------Functions----------------------------------------------------------
 void draw() {
@@ -46,12 +50,14 @@ void draw() {
     //---------Scene render--------------------------------------------------------
     
     c1.draw(VP);
+    c2.draw(VP);
     f1.draw(VP);
     ground.draw(VP);
     p.draw(VP);
     fp.draw(VP);
     t.draw(VP);
     thrower.draw(VP);
+    m.draw(VP);
     
 }
 
@@ -80,6 +86,7 @@ void tick_elements() {
     fp.tick(&thrower);
     t.tick(&thrower);
     p.tick(&thrower);
+    m.tick(&thrower);
     //--------------------------------------------------------------------------------
     thrower.tick();
 
@@ -89,13 +96,15 @@ void tick_elements() {
 
 void initGL(GLFWwindow *window, int width, int height) {
     //-----------Create objects----------------------------------------------
-        c1 = Circle(1,1,1.0f,0.5f,COLOR_BLACK);
+        c1 = Circle(1,1,1.0f,0.5f,-90,COLOR_BLACK);
+        c2 = Circle(1,1,1.0f,0.5f,0,COLOR_RED);
         f1 = Flyer(0,3,1.0f,0.01f);
         thrower = Thrower(-1,-1,0.25f);
         ground = Ground(-1,6.0f);
         fp = FlyerWithPlank(3.0f, 2.0f, 0.5f, 0.01f);
         t = Trampoline(-3.0f, 1.5f);
         p = Pond(3);
+        m = Magnet(-2, 3, -0.002f, 0.002f, 3.0f);
 
         // thrower  = Thrower(1, -1, COLOR_GREEN);
         // tramp = Trampoline(-1,-1,COLOR_RED);

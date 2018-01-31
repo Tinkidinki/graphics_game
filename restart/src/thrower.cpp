@@ -2,7 +2,7 @@
 #include "thrower.h"
 
 
-Thrower::Thrower(float x, float y, float radius):Circle(x, y, radius, 1.0f, COLOR_RED){
+Thrower::Thrower(float x, float y, float radius):Circle(x, y, radius, 1.0f, 0,COLOR_RED){
     this->acceleration.x = 0; 
     this->acceleration.y = 0; //This refers to the extra acceleration apart from gravity
     this->speed.x = 0;

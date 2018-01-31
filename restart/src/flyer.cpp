@@ -3,7 +3,7 @@
 #include "thrower.h"
 #include <iostream>
 
-Flyer::Flyer(float x, float y, float radius, float speed):Circle(x, y, radius, 1.0f, COLOR_GREEN){
+Flyer::Flyer(float x, float y, float radius, float speed):Circle(x, y, radius, 1.0f, 0, COLOR_GREEN){
     this->speed = speed;
 }
 

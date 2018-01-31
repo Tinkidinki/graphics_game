@@ -32,10 +32,18 @@ CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o: ../src/thrower.h
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/input.cpp
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: ../src/main.h
 
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/circle.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/magnet.cpp
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/magnet.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/rectangle.h
+CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o: ../src/thrower.h
+
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/circle.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/flyer.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/flyer_with_plank.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/ground.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/magnet.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/pond.h

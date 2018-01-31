@@ -57,9 +57,9 @@ void fill_array(int sides, float radius, float fraction, GLfloat array[]){
 
 };
 
-Circle::Circle(float x, float y, float radius, float fraction, color_t color) {
+Circle::Circle(float x, float y, float radius, float fraction, float angle, color_t color) {
     this->position = glm::vec3(x, y, 0);
-    this->rotation = 0;
+    this->rotation = angle;
     int sides = 50;
     this->radius = radius;
     this->fraction = fraction;

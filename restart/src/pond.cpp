@@ -3,26 +3,38 @@
 using namespace std;
 
 Pond::Pond(float x)
-    :Circle(x, -1, 1.0f, 0.5f, COLOR_BLACK){
+    :Circle(x, -1, 1.0f, 0.5f, 0,COLOR_BLACK){
 
     }
 
 void Pond::tick(Thrower* thrower){
     if (in_pond(thrower)){
         cout<<"reached beyond!"<<endl;
-        thrower->acceleration.y += - acc_due_to_gravity;
+        //thrower->acceleration.y += - acc_due_to_gravity;
         
         if(escaping_from_pond(thrower)){
-            float theta = atan(abs(thrower->position.y - this->position.y)
-                                    /abs(thrower->position.x - this->position.x));
+            float theta = atan(abs(this->position.y - thrower->position.y)
+                                    /abs(this->position.x - thrower->position.x));
             float old_x_speed = thrower->speed.x;
-            cout << "old speed: "<<thrower->speed.x<<","<<thrower->speed.y<< endl;
+            
+            if (thrower->position.x < this->position.x){
             thrower->speed.x = - thrower->speed.y * sin(theta)*cos(theta)
                                     + old_x_speed*sin(theta)*sin(theta);
             
             thrower->speed.y = thrower->speed.y * cos(theta)*cos(theta)
-                                    - old_x_speed * sin(theta) * sin(theta);
-            cout << "new speed: "<<thrower->speed.x<<","<<thrower->speed.y<< endl;
+                                    - old_x_speed * sin(theta) * cos(theta);
+            }
+
+            else if (thrower->position.x > this->position.x){
+            thrower->speed.x = thrower->speed.y * sin(theta)*cos(theta)
+                                    + old_x_speed*sin(theta)*sin(theta);
+            
+            thrower->speed.y = thrower->speed.y * cos(theta)*cos(theta)
+                                    + old_x_speed * sin(theta) * cos(theta);
+            }
+
+
+            
                                     
 
             thrower->acceleration.y += - thrower->speed.y;

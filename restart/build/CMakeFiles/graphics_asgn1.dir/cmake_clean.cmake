@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics_asgn1.dir/src/flyer_with_plank.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/ground.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
+  "CMakeFiles/graphics_asgn1.dir/src/magnet.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
