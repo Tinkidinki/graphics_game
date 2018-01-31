@@ -15,6 +15,7 @@ using namespace std;
 #include "trampoline.h"
 #include "pond.h"
 #include "magnet.h"
+#include "porcupine.h"
 
 //---------------Important declarations-------------------------------------------
 GLMatrices Matrices;
@@ -35,6 +36,7 @@ FlyerWithPlank fp;
 Trampoline t;
 Pond p;
 Magnet m;
+Porcupine pork;
 
 // -------------Functions----------------------------------------------------------
 void draw() {
@@ -58,6 +60,7 @@ void draw() {
     t.draw(VP);
     thrower.draw(VP);
     m.draw(VP);
+    pork.draw(VP);
     
 }
 
@@ -87,6 +90,7 @@ void tick_elements() {
     t.tick(&thrower);
     p.tick(&thrower);
     m.tick(&thrower);
+    pork.tick(&thrower);
     //--------------------------------------------------------------------------------
     thrower.tick();
 
@@ -105,6 +109,7 @@ void initGL(GLFWwindow *window, int width, int height) {
         t = Trampoline(-3.0f, 1.5f);
         p = Pond(3);
         m = Magnet(-2, 3, -0.002f, 0.002f, 3.0f);
+        pork = Porcupine(0.0f);
 
         // thrower  = Thrower(1, -1, COLOR_GREEN);
         // tramp = Trampoline(-1,-1,COLOR_RED);

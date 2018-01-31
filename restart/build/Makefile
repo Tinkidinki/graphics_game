@@ -420,6 +420,33 @@ src/pond.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/pond.cpp.s
 .PHONY : src/pond.cpp.s
 
+src/porcupine.o: src/porcupine.cpp.o
+
+.PHONY : src/porcupine.o
+
+# target to build an object file
+src/porcupine.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.o
+.PHONY : src/porcupine.cpp.o
+
+src/porcupine.i: src/porcupine.cpp.i
+
+.PHONY : src/porcupine.i
+
+# target to preprocess a source file
+src/porcupine.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.i
+.PHONY : src/porcupine.cpp.i
+
+src/porcupine.s: src/porcupine.cpp.s
+
+.PHONY : src/porcupine.s
+
+# target to generate assembly for a file
+src/porcupine.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.s
+.PHONY : src/porcupine.cpp.s
+
 src/rectangle.o: src/rectangle.cpp.o
 
 .PHONY : src/rectangle.o
@@ -570,6 +597,9 @@ help:
 	@echo "... src/pond.o"
 	@echo "... src/pond.i"
 	@echo "... src/pond.s"
+	@echo "... src/porcupine.o"
+	@echo "... src/porcupine.i"
+	@echo "... src/porcupine.s"
 	@echo "... src/rectangle.o"
 	@echo "... src/rectangle.i"
 	@echo "... src/rectangle.s"

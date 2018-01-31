@@ -47,6 +47,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/magnet.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/pond.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/porcupine.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/rectangle.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/thrower.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/timer.h
@@ -63,6 +64,12 @@ CMakeFiles/graphics_asgn1.dir/src/pond.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/pond.cpp.o: ../src/pond.cpp
 CMakeFiles/graphics_asgn1.dir/src/pond.cpp.o: ../src/pond.h
 CMakeFiles/graphics_asgn1.dir/src/pond.cpp.o: ../src/thrower.h
+
+CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.o: ../src/circle.h
+CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.o: ../src/porcupine.cpp
+CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.o: ../src/porcupine.h
+CMakeFiles/graphics_asgn1.dir/src/porcupine.cpp.o: ../src/thrower.h
 
 CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/rectangle.cpp.o: ../src/rectangle.cpp
