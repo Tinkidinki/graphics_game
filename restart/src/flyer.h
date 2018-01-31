@@ -11,6 +11,7 @@ public:
     Flyer(float x, float y, float radius, float speed);
     void tick(Thrower* thrower);
     bool is_within_horizontal_boundary();
+    bool hit_flyer(Thrower* thrower);
     
     float speed;
 

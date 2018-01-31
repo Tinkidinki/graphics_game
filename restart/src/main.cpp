@@ -13,6 +13,7 @@ using namespace std;
 #include "ground.h"
 #include "flyer_with_plank.h"
 #include "trampoline.h"
+#include "pond.h"
 
 //---------------Important declarations-------------------------------------------
 GLMatrices Matrices;
@@ -29,6 +30,7 @@ Thrower thrower;
 Ground ground;
 FlyerWithPlank fp;
 Trampoline t;
+Pond p;
 
 // -------------Functions----------------------------------------------------------
 void draw() {
@@ -42,12 +44,15 @@ void draw() {
     glm::mat4 MVP;  
 
     //---------Scene render--------------------------------------------------------
+    
     c1.draw(VP);
     f1.draw(VP);
-    thrower.draw(VP);
     ground.draw(VP);
+    p.draw(VP);
     fp.draw(VP);
     t.draw(VP);
+    thrower.draw(VP);
+    
 }
 
 void move(char key){
@@ -74,6 +79,7 @@ void tick_elements() {
     ground.tick(&thrower);
     fp.tick(&thrower);
     t.tick(&thrower);
+    p.tick(&thrower);
     //--------------------------------------------------------------------------------
     thrower.tick();
 
@@ -85,10 +91,11 @@ void initGL(GLFWwindow *window, int width, int height) {
     //-----------Create objects----------------------------------------------
         c1 = Circle(1,1,1.0f,0.5f,COLOR_BLACK);
         f1 = Flyer(0,3,1.0f,0.01f);
-        thrower = Thrower(-1,-1,0.5f);
-        ground = Ground(0,8.0f);
+        thrower = Thrower(-1,-1,0.25f);
+        ground = Ground(-1,6.0f);
         fp = FlyerWithPlank(3.0f, 2.0f, 0.5f, 0.01f);
-        t = Trampoline(3.0f, 1.5f);
+        t = Trampoline(-3.0f, 1.5f);
+        p = Pond(3);
 
         // thrower  = Thrower(1, -1, COLOR_GREEN);
         // tramp = Trampoline(-1,-1,COLOR_RED);

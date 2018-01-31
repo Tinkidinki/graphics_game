@@ -14,7 +14,7 @@ void Flyer::tick(Thrower* thrower){
         this->speed = -this->speed;
     }
 
-    if (detect_collision(this->bounding_box(), thrower->bounding_box())){
+    if (hit_flyer(thrower)){
         //std::cout << "collision!" << std::endl;
         if (thrower->speed.y <0){
             this->position.y = -5;
@@ -33,4 +33,11 @@ bool Flyer::is_within_horizontal_boundary(){
         return true;
     else 
         return false;
+}
+
+bool Flyer::hit_flyer(Thrower* thrower){
+    float horizontal_square = pow(abs(thrower->position.x - this->position.x),2);
+    float vertical_square = pow(abs(thrower->position.y - this->position.y), 2);
+    float distance = sqrt(horizontal_square + vertical_square);
+    return distance < (this->radius + thrower->radius);
 }

@@ -16,9 +16,6 @@ public:
     glm::vec3 acceleration;
     
 
-private:
-    VAO *object;
-
 };
 
 #endif //CIRCLE_H

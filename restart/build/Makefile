@@ -366,6 +366,33 @@ src/other_handlers.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s
 .PHONY : src/other_handlers.cpp.s
 
+src/pond.o: src/pond.cpp.o
+
+.PHONY : src/pond.o
+
+# target to build an object file
+src/pond.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/pond.cpp.o
+.PHONY : src/pond.cpp.o
+
+src/pond.i: src/pond.cpp.i
+
+.PHONY : src/pond.i
+
+# target to preprocess a source file
+src/pond.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/pond.cpp.i
+.PHONY : src/pond.cpp.i
+
+src/pond.s: src/pond.cpp.s
+
+.PHONY : src/pond.s
+
+# target to generate assembly for a file
+src/pond.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/pond.cpp.s
+.PHONY : src/pond.cpp.s
+
 src/rectangle.o: src/rectangle.cpp.o
 
 .PHONY : src/rectangle.o
@@ -510,6 +537,9 @@ help:
 	@echo "... src/other_handlers.o"
 	@echo "... src/other_handlers.i"
 	@echo "... src/other_handlers.s"
+	@echo "... src/pond.o"
+	@echo "... src/pond.i"
+	@echo "... src/pond.s"
 	@echo "... src/rectangle.o"
 	@echo "... src/rectangle.i"
 	@echo "... src/rectangle.s"
