@@ -1,11 +1,7 @@
-Graphics Boilerplate Code
+Graphics Game
 =========================
 
-This is boilerplate code for the assignments which might be helpful.
+Have fun!
 
 
-License
--------
-The MIT License https://meghprkh.mit-license.org/
 
-Copyright &copy; 2018 Megh Parikh <meghprkh@gmail.com>
